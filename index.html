@@ -10,16 +10,29 @@
 <body>
     <div class="container">
         <div class="formContainer">
-            <img src="" alt="Platzi" class="platziImg">
+            <img src="/img/logo-platzi-white.svg" alt="Platzi" class="platziImg">
             <form class="platziForm" action="">
-                <input placeholder="Ingresa tu nombre y Apellido" type="text" class="formItem">
-                <input placeholder="¿Cuál es tu Username en Platzi?" type="text" class="formItem">
-                <input placeholder="¿Cuál es tu edad?" type="number" class="formItem">
-                <input placeholder="¿cuál es tu eMail?" type="email" class="formItem">
-                <input placeholder="¿Cuánto dinero tienes ahorrado?" type="number" class="formItem">
-                <input placeholder="¿Cuánto dinero debes?" type="number" class="formItem">
-                <input type="submit" class="formBtn">
+                <input placeholder="Ingresa tu nombre y Apellido" type="text" class="formItem" id="nameLastname">
+                <input placeholder="¿Cuál es tu Username en Platzi?" type="text" class="formItem" id="username">
+                <input placeholder="¿Cuál es tu edad?" type="text" class="formItem" id="age">
+                <input placeholder="¿Cuál es tu eMail?" type="email" class="formItem" id="eMail">
+                <input placeholder="¿Cuánto dinero tienes ahorrado?" type="text" class="formItem" id="savings">
+                <input placeholder="¿Cuánto dinero debes?" type="text" class="formItem" id="debt">
+                <input value="Enviar Formulario" type="submit" class="formBtn" onclick="formValidation(); return false;">
             </form>
+        </div>
+        <div class="userContainer" id="userContainer">
+            <div class="userTitle"><h3>Usuarios</h3></div>
+            <div class="userInfoContainer">
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="userImg" class="userImg">
+                    <div class="names">
+                        <div class="uName" id="uNameTitle">  </div>
+                        <div class="username" id="usernameTitle">  </div>
+                    </div>
+                </div>
+                <button class="userBtn">Ver Perfil</button>
+            </div>
         </div>
     </div>
     <script src="./scripts.js"></script>

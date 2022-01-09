@@ -6,6 +6,7 @@ function formValidation() {
     let eMail = document.getElementById('eMail').value;
     let savings = document.getElementById('savings').value;
     let debt = document.getElementById('debt').value;
+    
     const user = [nameLastname.split(' '), username, age, eMail, savings, debt]
 
     let okForm = true;
@@ -16,8 +17,9 @@ function formValidation() {
             okForm = false;
         }
     }
-
+    
     if (okForm == true) {
+
             const title = document.createElement('span');
             const namedTitle = document.createTextNode(nameLastname);
             title.appendChild(namedTitle);
@@ -36,3 +38,7 @@ function formValidation() {
 
 }
 
+function userBtn() {
+    const popUpDisplay = document.getElementById('popUp');
+    popUpDisplay.style.display = 'flex';
+}

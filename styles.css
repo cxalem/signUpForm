@@ -1,5 +1,7 @@
 :root {
     --bgColor: #121f3d;
+    --bgColor2: #24385b;
+    --fontColor: #fff;
 }
 
 * {
@@ -30,8 +32,9 @@ body {
 }
 
 .formContainer {
+    margin-top: 30px;
     grid-column-start: form;
-    background: #24385b;
+    background: var(--bgColor2);
     padding: 100px 60px;
     border-radius: 15px;
     box-shadow: 5px 5px 30px #0003275e;
@@ -44,9 +47,14 @@ body {
     row-gap: 15px;
 }
 
+.names {
+    margin-left: 20px;
+}
+
 img {
     width: 150px;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .formItem {
@@ -56,7 +64,7 @@ img {
     border-radius: 8px;
     box-sizing: border-box;
     padding: .75rem 1rem;
-    color: #fff;
+    color: var(--fontColor);
 }
 
 .formBtn {
@@ -65,7 +73,7 @@ img {
     background: #98ca3f;
     padding: .75rem 1rem;
     border-radius: 8px;
-    color: #fff;
+    color: var(--fontColor);
     margin-top: 10px;
 }
 
@@ -90,7 +98,7 @@ img {
 .userInfoContainer {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
+    padding: 25px 15px;
     align-items: center;
 }
 
@@ -98,13 +106,24 @@ img {
     border-style: none;
     padding: 13px 30px;
     background: #ca3f3f;
-    color: #fff;
+    color: var(--fontColor);
     border-radius: 5px;
+    text-align: center;
 }
 
 :hover.userBtn {
     background: #fd5c5c;
     transition: ease-in-out 0.3s;
+}
+
+.userInfoPopContainer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: #0000006b;
 }
 
 .user {
@@ -113,18 +132,42 @@ img {
 }
 
 .uName > span {
-    color: #fff;
+    color: var(--fontColor);
     font-weight: bold;
     font-size: 2rem;
 }
 
 .username {
-    color: #fff;
+    color: var(--fontColor);
 }
 
 .userImg {
     width: 60px;
     height: auto;
     margin-bottom: 0;
-    margin-right: 30px;
+}
+
+.userInfoPop {
+    background: var(--bgColor2);
+    padding: 60px 30px;
+    border-radius: 15px;
+}
+
+.userProfileInfo {
+    display: grid;
+    row-gap: 7px;
+    margin-top: 10px;
+    color: var(--fontColor);
+    font-size: 1.7rem;
+}
+
+.userProfile {
+    text-align: center;
+}
+
+.profileTitle {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--fontColor);
+
 }

@@ -44,6 +44,9 @@ function userBtn() {
 
     user = [nameLastname.value.split(' '), username.value, age.value, eMail.value, savings.value, debt.value];
 
+    const hideDisplay = document.getElementById('userContainer');
+    hideDisplay.style.display = 'none';
+
     let title = document.createElement('span');
     let namedTitle = document.createTextNode(`${user[0][0]} ${user[0][1]}`);
     let element = document.getElementById('userTitle');
@@ -73,7 +76,7 @@ function userBtn() {
     let userDebts = document.createTextNode(`Deudas: ${user[5]}`);
     let debtsElement = document.getElementById('userDebts');
     let moneySpan = document.createElement('span');
-    let userMoney = document.createTextNode(`Dinero: ${userRealMoney}`);
+    let userMoney = document.createTextNode(`Dinero después de deudas: ${userRealMoney}`);
     let moneyElement = document.getElementById('realMoney');
 
     const popUpDisplay = document.getElementById('popUp');

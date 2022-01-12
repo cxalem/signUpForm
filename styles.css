@@ -24,7 +24,7 @@ body {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: auto 500px auto;
+    grid-template-columns: auto;
     align-items: center;
     grid-template-areas: "margin-1 form margin-2"
 }
@@ -36,8 +36,8 @@ body {
     padding: 100px 60px;
     border-radius: 15px;
     box-shadow: 5px 5px 30px #0003275e;
-    text-align: center;
     margin-bottom: 30px;
+    max-width: 500px;
 }
 
 .platziForm {

@@ -27,8 +27,6 @@ body {
     grid-template-columns: auto 500px auto;
     align-items: center;
     grid-template-areas: "margin-1 form margin-2"
-                         "margin-3 userTitle margin-4"
-                         "userInfo empty userBtn";
 }
 
 .formContainer {
@@ -88,7 +86,7 @@ img {
     grid-column-end: margin-2 ;
 }
 
-.userTitle {
+.usersTitle {
     padding: 5px 0;
     text-align: center;
     color: #24385b;
@@ -155,8 +153,7 @@ img {
 
 .userProfileInfo {
     display: grid;
-    row-gap: 7px;
-    margin-top: 10px;
+    margin-top: 20px;
     color: var(--fontColor);
     font-size: 1.7rem;
 }
